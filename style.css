@@ -1,0 +1,156 @@
+/* HEADER */
+
+header#logo {
+  display: grid;
+  width: 100%;
+}
+
+header#logo img {
+  margin: 20px auto;
+}
+
+/* MAIN */
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 85vw;
+  margin: auto;
+  background-color: #c4b8ac85;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  height: 70vh;
+  overflow: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-align: start;
+}
+
+/* COLORS */
+
+section#colors {
+  grid-column: 1;
+  justify-self: center;
+}
+
+#colors div.sizing {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+#colors .color_one {
+  background-color: #4e4d4b;
+}
+
+#colors .color_two {
+  background-color: #998f86;
+}
+#colors .color_three {
+  background-color: #c4b8ac;
+}
+#colors .color_four {
+  background-color: #798a8c;
+}
+#colors .color_five {
+  background-color: #7c8799;
+}
+
+/* TXT */
+
+section#txt {
+  grid-column: 2;
+  width: 100%;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #4e4d4b;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #998f86;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #4e4d4b;
+}
+
+p {
+  font-family: Open sans, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #000000;
+}
+
+/* UI ELEMENTS */
+
+#ui_elements {
+  grid-row: 2;
+  grid-column: auto;
+  justify-self: center;
+  padding-top: 20px;
+  margin: 10px;
+}
+
+#ui_elements nav a {
+  margin-right: 20px;
+}
+
+#ui_elements nav {
+  margin-top: 20px;
+  grid-column: 1;
+  text-align: center;
+}
+
+#ui_elements nav a.no_hover {
+  padding: 8px;
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-color: #c4b8ac;
+  color: #ffffff;
+}
+
+#ui_elements nav a.with_hover {
+  padding: 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background-color: #c4b8ac;
+  color: #ffffff;
+  border: solid 1px #70665d;
+}
+
+section#pics {
+  grid-row: 3;
+  grid-column: 1 /6;
+  margin: 20px;
+}
+
+section#pics img {
+  width: 40vw;
+  padding: 10px;
+}
